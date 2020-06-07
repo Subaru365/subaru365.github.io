@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import styled from 'styled-components'
 import profile from 'static/profile.png'
 import {
@@ -72,7 +73,7 @@ const StyledLink = styled(Link)`
   color: inherit;
 `
 
-const StyledHref = styled.a`
+const StyledHref = styled(OutboundLink)`
   text-decoration: none;
   color: inherit;
 `
