@@ -47,6 +47,16 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: ["G-NPJ79BKVMN"],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+      },
+    },
   ]
 }
